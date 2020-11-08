@@ -1,10 +1,13 @@
 package com.company;
 
+import java.util.Random;
+
 public class Fruit {
     private int weight;
+    private Random random = new Random();
 
-    public Fruit(int weight){
-        this.weight = weight;
+    public Fruit(){
+        this.weight = random.nextInt(200) + 100;
     }
 
     public String toString(){

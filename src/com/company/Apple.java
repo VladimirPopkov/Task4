@@ -1,11 +1,15 @@
 package com.company;
 
+import java.util.Random;
+
 public class Apple extends Fruit {
     private String color;
+    private String[] appleColor = {"Красное", "Зеленое", "Желтое"};
+    private Random random = new Random();
 
-    public Apple(int weight, String color){
-        super(weight);
-        this.color = color;
+    public Apple(){
+        super();
+        this.color = appleColor[random.nextInt(4)];
     }
 
     public String toString(){

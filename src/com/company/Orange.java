@@ -1,11 +1,14 @@
 package com.company;
 
+import java.util.Random;
+
 public class Orange extends Fruit{
     private int peelThickness;
+    private Random random = new Random();
 
-    public Orange(int weight, int peelThickness){
-        super(weight);
-        this.peelThickness = peelThickness;
+    public Orange(){
+        super();
+        this.peelThickness = random.nextInt(21);
     }
 
     public String toString(){
